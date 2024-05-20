@@ -1,5 +1,5 @@
-import img1 from
-const allRandomHeadings = [
+
+const allRandomParagraphs = [
     {
         id:1,
         text: "Connect with nature. Majestic mountains, crystal-clear lakes, lush forests - true paradise for nature lovers."
@@ -11,17 +11,12 @@ const allRandomHeadings = [
     {
         id: 3,
         text: "Unwind in a luxury spa resort, taste a local delicious cuisine or just stroll in beautiful landscape."
-    }
-
-]
-
-export default allRandomHeadings
-
-const allTabs [
+    },
     {
-        id: 1,
-        title: "Challenging tour",
-        img: img1,
-        description: 
+        id: 4,
+        text: "Graubünden, located in Switzerland, is a beautiful destination known for its stunning landscapes, charming villages, and delicious cuisine."
     }
 ]
+
+export default allRandomParagraphs
+

@@ -1,12 +1,24 @@
-import Header from './components/Header'
-import Navbar from './components/Navbar'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import Home from "./pages/Home"
+import Contact from "./pages/Contact"
+import Error from "./pages/Error"
+import SharedLayout from "./pages/SharedLayout"
+
+
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={ <SharedLayout /> } >
+          <Route path="/" element={ <Home /> } />
+          <Route path="/contact" element={ <Contact /> } />
+          <Route path="*" element={ <Error /> } />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 
