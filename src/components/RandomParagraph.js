@@ -1,27 +1,30 @@
-import data from "../data"
+import paragraphs from "../data"
 import { useState, useEffect } from "react"
+import { Button } from "react-bootstrap"
 
-const RandomParagraph = (props) => {
-    const [randomParagraph, setRandomParagraph] = useState('');
+
+const RandomParagraph = () => {
+    const [randomParagraph, setRandomParagraph] = useState('Graubünden, located in Switzerland, is a beautiful destination known for its stunning landscapes, charming villages, and delicious cuisine.');
 
     useEffect(() => {
       selectRandomParagraph();
     }, []);
+
   
     const selectRandomParagraph = () => {
-      const randomIndex = Math.floor(Math.random() * data.length);
-      setRandomParagraph(data[randomIndex]);
+      const randomIndex = Math.floor(Math.random() * paragraphs.length);
+      setRandomParagraph(paragraphs[randomIndex]);
     };
   
     return <div>
-          {/* <button onClick={selectRandomParagraph}>
-            Generate Random Paragraph
-          </button>
-          {data.map((item) => (
-            <p key={props.id}>{props.text}</p>
-          ))}
-          <p>{randomParagraph}</p> */}
-        </div>
-}
+        <Button onClick={selectRandomParagraph}>Give me a reason</Button>
+       {/*  {paragraphs.map((oneParagraph) => {
+            const {id, text} = oneParagraph
+            return <p key={id}>{text}</p>
+        }
+        )}
+        <p>{randomParagraph}</p> */}
+      </div>
+};
 
 export default RandomParagraph

@@ -1,5 +1,5 @@
 
-const allRandomParagraphs = [
+const paragraphs = [
     {
         id:1,
         text: "Connect with nature. Majestic mountains, crystal-clear lakes, lush forests - true paradise for nature lovers."
@@ -11,12 +11,8 @@ const allRandomParagraphs = [
     {
         id: 3,
         text: "Unwind in a luxury spa resort, taste a local delicious cuisine or just stroll in beautiful landscape."
-    },
-    {
-        id: 4,
-        text: "Graubünden, located in Switzerland, is a beautiful destination known for its stunning landscapes, charming villages, and delicious cuisine."
     }
 ]
 
-export default allRandomParagraphs
+export default paragraphs
 
