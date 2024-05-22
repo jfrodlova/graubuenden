@@ -1,5 +1,5 @@
 import Header from "../components/Header"
-import MediaCard from "../components/Card"
+import MediaCard from "../components/CardComponent/Card"
 
 import TabsB from "../components/TabComponent/Tabs"
 

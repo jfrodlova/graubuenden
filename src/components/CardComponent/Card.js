@@ -6,12 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 //import cards from "../cardData"
-import img1 from "../img/alpinism.png"
-//import img2 from "../img/spa.png"
-//import img3 from "../img/swiss.png"
-
-
-
+import img1 from "../../img/alpinism.png"
 
 const MediaCard = () => {
   return (

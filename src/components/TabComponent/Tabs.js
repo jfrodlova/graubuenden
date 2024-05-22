@@ -7,23 +7,34 @@ import MyTabContent from "./MyTabContent";
 
 const TabsB = () => {
 
-  const oneTab = tabData[0] 
-  const { id, title, description, image } = oneTab
+  return (
+    <div style={{ display: "block", width: 700, padding: 30 }}>
+      <h4>Activities you should try</h4>
+      <Tabs defaultActiveKey="¨first">
+        {tabData.map((oneTab) => {
+          const { eventkey, title, description, image } = oneTab;
+          return <Tab eventKey={eventkey} title={title}>
+            <section>
+              <p>{description}</p>
+              <div>
+                <img src={image} alt="" />
+              </div>
+            </section>
+          </Tab>;
+        })}
+      </Tabs>
+    </div>
+  );
+};
 
-  return <div style={{ display: "block", width: 700, padding: 30 }}>
-      <h4>React-Bootstrap Tab Component</h4>
-      <Tabs defaultActiveKey="second">
-      
-        <Tab eventKey="first" title="Dashboard">
-         
-        <section>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                    <div>
-                      <img src={image} alt="" />
-                    </div>
-                  </section>
-            {/* <MyTabContent>
+export default TabsB;
+
+{
+  /* <Tab eventKey="first" title="Dashboard"> */
+}
+
+{
+  /* <MyTabContent>
               {tabData.map((oneTab) => {
                 const { title, description, image } = oneTab;
                 return (
@@ -36,15 +47,14 @@ const TabsB = () => {
                   </section>
                 );
               })}
-            </MyTabContent> */}
-        </Tab>
-      </Tabs>
-    </div>
-};
+            </MyTabContent> */
+}
+{
+  /* </Tab> */
+}
 
-export default TabsB;
-  
-{/* <Tab eventKey="first" title="Dashboard">
+{
+  /* <Tab eventKey="first" title="Dashboard">
           Hii, I am 1st tab content
         </Tab>
 
@@ -55,4 +65,5 @@ export default TabsB;
         <Tab eventKey="third" title="Aboutus">
           Hii, I am 3rd tab content
         </Tab>
-      </Tabs> */}
+      </Tabs> */
+}
