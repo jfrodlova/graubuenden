@@ -24,7 +24,7 @@ const tabData = [
     },
     {
         eventkey: "fourth",
-        title: "Mountain sports",
+        title: "Move",
         image: img4,
         description: "Graubünden is home to several world-class ski resorts, such as St. Moritz, Davos, and Arosa. The region offers a variety of slopes for all skill levels, as well as off-piste terrain for more experienced skiers and snowboarders. It also is a paradise for hikers and trekkers, with countless trails that wind through the region's picturesque valleys and alpine meadows. The famous Haute Route and Via Alpina both pass through Graubünden, boasting with stunning views of the Swiss Alps. The region has also a great offer for mountain bikers - from forest paths to challenging downhill descents. Moreover, Graubünden is rich in a variety of climbing opportunities, from beginner-friendly crags to challenging multi-pitch routes. The region is home to iconic climbing destinations such as the Bregaglia and Albigna valleys, where climbers can test their skills on granite walls and boulders. "
     },

@@ -1,17 +1,16 @@
 import Header from "../components/Header"
-import MediaCard from "../components/CardComponent/Card"
+import CardPanel from "../components/CardComponent/CardPanel"
 
-import TabsB from "../components/TabComponent/Tabs"
+import MyTabs from "../components/TabComponent/MyTabs"
 
 const Home = () => {
   return <section>
     <Header />
+    <CardPanel />
     <div className="flex-container">
-      <MediaCard className="card-item" />
-      <MediaCard />
-      <MediaCard />
-      </div>
-    <TabsB />
+      <MyTabs />
+    </div>
+    
       
   </section>
 }
