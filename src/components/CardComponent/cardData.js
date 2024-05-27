@@ -6,14 +6,14 @@ const cards = [
     {
         id: 1,
         image: img1,
-        title: "Hiking",
-        description: "Grab a backpack and enjoy the views!"
+        title: "Sport with views",
+        description: "Grab a backpack and enjoy breathtaking panoramas!"
     },
     {
         id: 2,
         image: img2,
         title: "Spa paradise",
-        description: "Have a relaxing day after a challenging trip."
+        description: "Have a relaxing day after a challenging trip to mountains."
     },
     {
         id: 3,

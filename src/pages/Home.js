@@ -7,11 +7,7 @@ const Home = () => {
   return <section>
     <Header />
     <CardPanel />
-    <div className="flex-container">
-      <MyTabs />
-    </div>
-    
-      
+    <MyTabs />    
   </section>
 }
 

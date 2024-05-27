@@ -5,9 +5,8 @@
     background-image: url(../img/jairph-title.jpg);
     margin: 0 10px;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 50%;
+    height: 40vh;
 
 }
 
@@ -16,10 +15,5 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
-
-/* .header-item {
-    width: 30%;
-    margin: 10px;
-} */
