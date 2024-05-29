@@ -1,10 +1,14 @@
 .footer{
-    padding-top: 10px;
-    background-color: black;
-    color: whitesmoke;
-    position:sticky;
+    height: 24px;
+    background-color: rgb(40, 31, 31);
+    color: rgba(245, 245, 245, 0.953);
+    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    margin-bottom: 0;
+    width: 100%; 
+}
+
+.footer p {
+    text-align: center;
+    color: rgba(245, 245, 245, 0.953);
 }
