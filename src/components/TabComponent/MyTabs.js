@@ -10,9 +10,9 @@ const MyTabs = () => {
     <Container>
       <h2>Activities you should try</h2>
       <Tabs defaultActiveKey="first">
-        {tabData.map((oneTab) => {
+        {tabData.map((oneTab, index) => {
           const { eventkey, title, description} = oneTab;
-          return <Tab  eventKey={eventkey} title={title}>
+          return <Tab key={index}  eventKey={eventkey} title={title}>
             <section className='flex-container flex-container-tab'> 
               <p >{description}</p>
             </section>

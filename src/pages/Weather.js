@@ -10,43 +10,49 @@ const Weather = () => {
   const [search, setSearch] = useState("");
   const [weather, setWeather] = useState({});
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const formSubmit = (event) => {
+    event.preventDefault();
     fetch(`${api.base}weather?q=${search}&units=metric&APPID=${api.key}`)
-    .then((res) => res.json())
-    .then((result) => {
-      setWeather(result);
-      setSearch(""); 
-    })
-    .catch(error => console.error('error', error));
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("City not found. Please enter a valid city name.");
+        } return res.json();
+      })
+      .then((result) => {
+        setWeather(result);
+      })
+      .catch((error) => {
+        console.error("Failed:", error.message)
+      })
+      .finally(() => {
+        setSearch("");
+      });
+    }
 
-    
-  };
 
   return (
     <section className="weather-api">
       <h1>Check the weather before your trip</h1>
 
       {/* Search box */}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={formSubmit}>
         <input
           type="text"
           placeholder="Enter city/town..."
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
-        <Button className="primary-button" onClick={handleSubmit}>
+        <Button type="submit" className="primary-button">
           Search
         </Button>
       </form>
 
-      {Object.keys(weather).length !== 0 && (
+      {Object.keys(weather).length !== 0 && weather.main && weather.weather && (
         <div className="weather-results">
           <h3>{weather.name}</h3>
           <p>{Math.floor(weather.main.temp)} °C</p>
           <p>{weather.weather[0].main}</p>
           <p>({weather.weather[0].description})</p>
-          {/* <div>{weather.weather[0].icon}</div> */}
         </div>
       )}
       <div className="weather-img"></div>
@@ -54,4 +60,4 @@ const Weather = () => {
   );
 };
 
-export default Weather;
+export default Weather
