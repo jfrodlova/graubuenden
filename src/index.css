@@ -58,8 +58,6 @@ ul.nav.nav-tabs {
     background-position: center;
     background-size: cover;
     height: 40vh;
-
-
 }
 
 /*weather page */
@@ -77,6 +75,10 @@ ul.nav.nav-tabs {
     text-align:center;
 }
 
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+}
 
 @media screen and (min-width: 961px) {
     .carousel-box, .weather-img {

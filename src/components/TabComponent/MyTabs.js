@@ -2,7 +2,8 @@ import tabData from "./tabdata";
 import "bootstrap/dist/css/bootstrap.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const MyTabs = () => {
 
@@ -15,6 +16,9 @@ const MyTabs = () => {
           return <Tab key={index}  eventKey={eventkey} title={title}>
             <section className='flex-container flex-container-tab'> 
               <p >{description}</p>
+              <Link to="/weather">
+              <Button variant="warning">Check the weather</Button>
+              </Link>
             </section>
           </Tab>;
         })}

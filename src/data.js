@@ -11,6 +11,10 @@ const paragraphs = [
     {
         id: 3,
         text: "Unwind in a luxury spa resort, taste a local delicious cuisine or just stroll in beautiful landscape."
+    }, 
+    {
+        id: 4,
+        text: "Graubünden, located in Switzerland, is a beautiful destination known for its stunning landscapes, charming villages, and delicious cuisine."
     }
 ]
 

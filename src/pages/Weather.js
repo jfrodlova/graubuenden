@@ -9,6 +9,7 @@ const api = {
 const Weather = () => {
   const [search, setSearch] = useState("");
   const [weather, setWeather] = useState({});
+  const [errorMessage, setNewError] = useState("");
 
   const formSubmit = (event) => {
     event.preventDefault();
@@ -16,19 +17,20 @@ const Weather = () => {
       .then((res) => {
         if (!res.ok) {
           throw new Error("City not found. Please enter a valid city name.");
-        } return res.json();
+        }
+        return res.json();
       })
       .then((result) => {
         setWeather(result);
       })
       .catch((error) => {
-        console.error("Failed:", error.message)
+        console.error("Failed:", error.message);
+        setNewError(error.message);
       })
       .finally(() => {
         setSearch("");
       });
-    }
-
+  };
 
   return (
     <section className="weather-api">
@@ -47,6 +49,10 @@ const Weather = () => {
         </Button>
       </form>
 
+      {/* Error message rendering */}
+      {errorMessage && <p className="error-message" >{errorMessage}</p>}
+
+      {/* Weather forecast results */}
       {Object.keys(weather).length !== 0 && weather.main && weather.weather && (
         <div className="weather-results">
           <h3>{weather.name}</h3>
@@ -60,4 +66,4 @@ const Weather = () => {
   );
 };
 
-export default Weather
+export default Weather;
