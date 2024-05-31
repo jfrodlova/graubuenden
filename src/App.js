@@ -1,5 +1,5 @@
+// created by jfrodlova - Discord: pagodulina
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 import Home from "./pages/Home"
 import Weather from "./pages/Weather"
 import Error from "./pages/Error"
