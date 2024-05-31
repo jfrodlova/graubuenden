@@ -9,7 +9,7 @@ import SharedLayout from "./pages/SharedLayout"
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/graubuenden">
       <Routes>
         <Route element={ <SharedLayout /> } >
           <Route path="/" element={ <Home /> } />
