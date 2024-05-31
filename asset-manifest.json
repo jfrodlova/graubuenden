@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/graubuenden/static/css/main.bddf4c79.css",
+    "main.js": "/graubuenden/static/js/main.57839164.js",
+    "static/media/claudio-schwarz-8EfaUXB8qw4-unsplash.jpg": "/graubuenden/static/media/claudio-schwarz-8EfaUXB8qw4-unsplash.d0e4b50ccf50f7d5227d.jpg",
+    "static/media/jairph-title.jpg": "/graubuenden/static/media/jairph-title.14ae7203100c5ff839ef.jpg",
+    "static/media/s-b-vonlanthen-U3rnc_wrtMc-unsplash.jpg": "/graubuenden/static/media/s-b-vonlanthen-U3rnc_wrtMc-unsplash.b440b1043f188989ea63.jpg",
+    "static/media/fabrizio-conti-b5rPuIBFeME-unsplash.jpg": "/graubuenden/static/media/fabrizio-conti-b5rPuIBFeME-unsplash.9b381d14adee38eab894.jpg",
+    "static/media/roberto-nickson-YCW4BEhKluw-unsplash.jpg": "/graubuenden/static/media/roberto-nickson-YCW4BEhKluw-unsplash.b35c2a0aae0c67e04cb4.jpg",
+    "static/media/lucas-canino-A-0m8NT7QZ8-unsplash.jpg": "/graubuenden/static/media/lucas-canino-A-0m8NT7QZ8-unsplash.fd7b53f700acfca90903.jpg",
+    "static/media/spa.png": "/graubuenden/static/media/spa.11b6f50a6ddab91d94ce.png",
+    "static/media/birdwatching.png": "/graubuenden/static/media/birdwatching.1963dfd7490285e76d99.png",
+    "static/media/pathway.png": "/graubuenden/static/media/pathway.6f7bea2255ebf395a985.png",
+    "static/media/excursion.png": "/graubuenden/static/media/excursion.66d84698cf159a0ee811.png",
+    "static/media/swiss.png": "/graubuenden/static/media/swiss.c7143192afdff4979167.png",
+    "index.html": "/graubuenden/index.html",
+    "main.bddf4c79.css.map": "/graubuenden/static/css/main.bddf4c79.css.map",
+    "main.57839164.js.map": "/graubuenden/static/js/main.57839164.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bddf4c79.css",
+    "static/js/main.57839164.js"
+  ]
+}
