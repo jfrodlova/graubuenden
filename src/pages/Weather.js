@@ -1,5 +1,8 @@
+import "./weather.css";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import InputGroup from "react-bootstrap/InputGroup";
 
 const api = {
   key: "44f3f6958c6e4851d9da75a9fae460a8",
@@ -33,35 +36,43 @@ const Weather = () => {
   };
 
   return (
-    <section className="weather-api">
-      <h1>Check the weather before your trip</h1>
+    <section>
+      <div className="weather-img ">
+        <h1>Check the weather</h1>
+        {/* Search box */}
+        <form onSubmit={formSubmit}>
+          <InputGroup>
+            <Form.Control
+              className="flex-item"
+              type="text"
+              placeholder="Enter city/town"
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
+            />
+            <Button className="flex-item " type="submit" variant="primary">
+              Search
+            </Button>
+          </InputGroup>
+          <div>
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
+          </div>
+          {/* Error message rendering */}
 
-      {/* Search box */}
-      <form onSubmit={formSubmit}>
-        <input
-          type="text"
-          placeholder="Enter city/town..."
-          onChange={(e) => setSearch(e.target.value)}
-          value={search}
-        />
-        <Button type="submit" className="primary-button">
-          Search
-        </Button>
-      </form>
-
-      {/* Error message rendering */}
-      {errorMessage && <p className="error-message" >{errorMessage}</p>}
-
-      {/* Weather forecast results */}
-      {Object.keys(weather).length !== 0 && weather.main && weather.weather && (
-        <div className="weather-results">
-          <h3>{weather.name}</h3>
-          <p>{Math.floor(weather.main.temp)} °C</p>
-          <p>{weather.weather[0].main}</p>
-          <p>({weather.weather[0].description})</p>
-        </div>
-      )}
-      <div className="weather-img"></div>
+          {/* Weather forecast results */}
+          <div className="weather">
+            {Object.keys(weather).length !== 0 &&
+              weather.main &&
+              weather.weather && (
+                <div className="weather-results">
+                  <h3>{weather.name}</h3>
+                  <p>{Math.floor(weather.main.temp)} °C</p>
+                  <p>{weather.weather[0].main}</p>
+                  <p>({weather.weather[0].description})</p>
+                </div>
+              )}
+          </div>
+        </form>
+      </div>
     </section>
   );
 };

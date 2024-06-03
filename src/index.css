@@ -31,12 +31,16 @@ section {
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     flex: 1;
     gap: 20px 20px;
     padding-top: 30px;
+}
+
+.flex-item {
+    margin: 0 5px;
 }
 
 ul.nav.nav-tabs {
@@ -60,25 +64,6 @@ ul.nav.nav-tabs {
     height: 40vh;
 }
 
-/*weather page */
-.weather-img {
-    object-fit: contain;
-    background-image: url("./img/lucas-canino-A-0m8NT7QZ8-unsplash.jpg");
-    background-position: center;
-    background-size: contain;
-    height: 70vh;
-    background-repeat: no-repeat;
-    margin: auto;
-}
-
-.weather-results {
-    text-align:center;
-}
-
-.error-message {
-    color: red;
-    font-size: 1.2rem;
-}
 
 @media screen and (min-width: 961px) {
     .carousel-box, .weather-img {
