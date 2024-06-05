@@ -1,9 +1,9 @@
 import "./MyCarousel.css";
 import Carousel from "react-bootstrap/Carousel";
-import img1 from "../img/fabrizio-conti-b5rPuIBFeME-unsplash.jpg";
-import img2 from "../img/roberto-nickson-YCW4BEhKluw-unsplash.jpg";
-import img3 from "../img/claudio-schwarz-8EfaUXB8qw4-unsplash.jpg";
-import img4 from "../img/s-b-vonlanthen-U3rnc_wrtMc-unsplash.jpg";
+import img1 from "../../img/fabrizio-conti-b5rPuIBFeME-unsplash.jpg";
+import img2 from "../../img/roberto-nickson-YCW4BEhKluw-unsplash.jpg";
+import img3 from "../../img/claudio-schwarz-8EfaUXB8qw4-unsplash.jpg";
+import img4 from "../../img/s-b-vonlanthen-U3rnc_wrtMc-unsplash.jpg";
 
 const MyCarousel = () => {
   return (

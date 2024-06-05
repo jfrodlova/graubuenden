@@ -1,21 +1,21 @@
 // created by jfrodlova - Discord: pagodulina
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
-import Weather from "./pages/Weather"
+import Weather from "./pages/Weather/Weather"
 import Error from "./pages/Error"
 import SharedLayout from "./pages/SharedLayout"
 
 const App = () => {
   return (
-    <BrowserRouter basename="graubuenden">
+    <HashRouter  >
       <Routes>
         <Route path="/" element={<SharedLayout />} >
-          <Route index element={<Home />} />
-          <Route path="weather" element={<Weather />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/weather" element={<Weather />} />
+          <Route path="/*" element={<Error />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

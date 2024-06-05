@@ -1,7 +1,7 @@
 /*weather page */
 .weather-img {
     object-fit: contain;
-    background-image: url("../img/sarthak-maji-dOA35bihSjk-unsplash.jpg");
+    background-image: url("../../img/sarthak-maji-dOA35bihSjk-unsplash.jpg");
     background-position: center;
     background-size: cover;
     height: 70vh;

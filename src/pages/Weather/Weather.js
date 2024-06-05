@@ -5,7 +5,7 @@ import { Form } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 
 const api = {
-  key: "44f3f6958c6e4851d9da75a9fae460a8",
+  key: "aa0d145b77cef27f8745f6986b7e2bcf",
   base: "https://api.openweathermap.org/data/2.5/",
 };
 

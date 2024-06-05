@@ -6,7 +6,6 @@ import { Container, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 const MyTabs = () => {
-
   return (
     <Container>
       <h2>Activities you should try</h2>

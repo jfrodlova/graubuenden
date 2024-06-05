@@ -62,9 +62,10 @@ ul.nav.nav-tabs {
     background-position: center;
     background-size: cover;
     height: 40vh;
+    border-radius: 10px;
 }
 
-
+/* media queries */
 @media screen and (min-width: 961px) {
     .carousel-box, .weather-img {
        width: 70vw;
@@ -78,4 +79,3 @@ ul.nav.nav-tabs {
       margin: auto;
     }
   }
-

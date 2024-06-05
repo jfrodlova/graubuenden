@@ -15,15 +15,14 @@ const CardPanel = () => {
       alignItems="stretch"
       gap={4}
     >
-      {cards.map((oneCard, card_index) => {
+      {cards.map((oneCard, cardIndex) => {
         const { image, title, description} = oneCard;
         return (
-          <Card sx={{ width: 340 }} key={card_index}>
+          <Card sx={{ width: 340 }} key={cardIndex}>
             <CardMedia
               sx={{ height: 300, objectFit: "contain", margin: 3 }}
               image={image}
               title={title}
-              
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

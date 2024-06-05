@@ -1,5 +1,4 @@
 import RandomParagraph from "./RandomParagraph";
-//import data from "../data";
 
 const Header = () => {
   return <section>

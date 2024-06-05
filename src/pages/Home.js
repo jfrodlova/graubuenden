@@ -1,7 +1,6 @@
 import Header from "../components/Header"
 import CardPanel from "../components/CardComponent/CardPanel"
-import MyCarousel from "../components/MyCarousel"
-
+import MyCarousel from "../components/Carousel/MyCarousel"
 import MyTabs from "../components/TabComponent/MyTabs"
 
 const Home = () => {

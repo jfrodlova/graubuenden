@@ -2,7 +2,7 @@
   "name": "explore_graubuenden",
   "version": "0.1.0",
   "private": true,
-  "homepage":" http://jfrodlova.github.io/graubuenden",
+  "homepage": "http://jfrodlova.github.io/graubuenden/#",
   "dependencies": {
     "@emotion/styled": "^11.11.5",
     "@material/card": "^14.0.0",
