@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/graubuenden/static/css/main.25e08683.css",
-    "main.js": "/graubuenden/static/js/main.dcdbc719.js",
+    "main.css": "/graubuenden/static/css/main.659773b3.css",
+    "main.js": "/graubuenden/static/js/main.b19ea57d.js",
     "static/media/claudio-schwarz-8EfaUXB8qw4-unsplash.jpg": "/graubuenden/static/media/claudio-schwarz-8EfaUXB8qw4-unsplash.d0e4b50ccf50f7d5227d.jpg",
     "static/media/jairph-title.jpg": "/graubuenden/static/media/jairph-title.14ae7203100c5ff839ef.jpg",
     "static/media/s-b-vonlanthen-U3rnc_wrtMc-unsplash.jpg": "/graubuenden/static/media/s-b-vonlanthen-U3rnc_wrtMc-unsplash.b440b1043f188989ea63.jpg",
@@ -14,11 +14,11 @@
     "static/media/excursion.png": "/graubuenden/static/media/excursion.66d84698cf159a0ee811.png",
     "static/media/swiss.png": "/graubuenden/static/media/swiss.c7143192afdff4979167.png",
     "index.html": "/graubuenden/index.html",
-    "main.25e08683.css.map": "/graubuenden/static/css/main.25e08683.css.map",
-    "main.dcdbc719.js.map": "/graubuenden/static/js/main.dcdbc719.js.map"
+    "main.659773b3.css.map": "/graubuenden/static/css/main.659773b3.css.map",
+    "main.b19ea57d.js.map": "/graubuenden/static/js/main.b19ea57d.js.map"
   },
   "entrypoints": [
-    "static/css/main.25e08683.css",
-    "static/js/main.dcdbc719.js"
+    "static/css/main.659773b3.css",
+    "static/js/main.b19ea57d.js"
   ]
 }
